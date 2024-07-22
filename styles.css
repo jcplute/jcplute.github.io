@@ -70,12 +70,11 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #333;
+    color: Maroon;
     font-weight: bold;
 }
 nav a:hover {
     text-decoration: underline;
-    color: Maroon;
 }
 
 /* Add these styles to your existing styles.css file */
