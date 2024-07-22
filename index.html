@@ -20,17 +20,37 @@
             <a href="projects.html">Projects/Activities</a>
         </nav>
 
-        <div class="section flex-container">
-            <div class="flex-item">
-                <img src="Jenna-1.jpg" alt="Jenna Plute" style="width:60%;height:auto">
-            </div>
-            <div class="flex-item">
-                <h2 style="color:MidnightBlue;">About Me</h2>
-                <p>Howdy! My name is Jenna Plute, and I'm  originally from Broomfield, Colorado. I am a third-year student at Texas A&M pursuing a Bachelor of Science degree in Mathematics, a minor in Computer Science, and both the University Honors and Departmental Honors distinction.</p>
+        .column {
+          float: left;
+          width: 50%;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
 
-                <p> On campus, I was just elected vice president of Aggie Yacht Club, so I expect to be sailing a lot next year!</p>
-            </div>
-        </div>
+        <div class="row">
+          <div class="column">
+            <img src="Jenna-1.jpg" alt="Jenna Plute" style="width:60%;height:auto">
+
+      <div class="column">
+        <h2 style="color:MidnightBlue;">About Me</h2>
+        <p>Howdy! My name is Jenna Plute, and I'm  originally from Broomfield, Colorado. I am a third-year student at Texas A&M pursuing a Bachelor of Science degree in Mathematics, a minor in Computer Science, and both the University Honors and Departmental Honors distinction.</p>
+
+        <p> On campus, I was just elected vice president of Aggie Yacht Club, so I expect to be sailing a lot next year!</p>
+      </div>              
+                
+    
 
         <div class="footer">
             <p>&copy; 2024 Jenna Plute. All rights reserved.</p>
