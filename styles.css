@@ -75,6 +75,7 @@ nav a {
 }
 nav a:hover {
     text-decoration: underline;
+    color: Maroon;
 }
 
 /* Add these styles to your existing styles.css file */
