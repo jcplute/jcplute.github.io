@@ -104,3 +104,47 @@ nav a:hover {
     width: 100%;
   }
 }
+
+/* Add these styles to your existing styles.css file */
+.dropdown-content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.dropdown-button {
+    cursor: pointer;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+}
+
+.dropdown-button:hover {
+    background-color: #ddd;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flex-item {
+    flex: 1;
+    padding: 10px;
+}
+
+.flex-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
