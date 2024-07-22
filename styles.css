@@ -76,3 +76,21 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+/* Add these styles to your existing styles.css file */
+.flex-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.flex-item {
+    flex: 1;
+    padding: 20px;
+}
+
+.flex-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
