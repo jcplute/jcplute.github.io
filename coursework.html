@@ -5,13 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coursework - John Doe</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .dropdown-content {
+            display: none;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        .dropdown-button {
+            cursor: pointer;
+            background-color: #f8f8f8;
+            color: #333;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            width: 100%;
+            font-size: 16px;
+        }
+        .dropdown-button:hover {
+            background-color: #ddd;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-         <div class="header">
-            <h1>Jenna Plute</h1>
-            <p>Aspiring Mathematician</p>
+        <div class="header">
+            <h1>John Doe</h1>
+            <p>Software Engineer | Data Scientist | Researcher</p>
         </div>
+
         <nav>
             <a href="index.html">Home</a>
             <a href="coursework.html">Coursework</a>
@@ -20,7 +41,7 @@
         </nav>
 
         <div class="section">
-            <h2>Coursework</h2>
+            <h2>Selected Coursework</h2>
             <div class="item">
                 <h3>Advanced Algorithms</h3>
                 <p>A comprehensive study of algorithms with a focus on design, analysis, and complexity. Topics include dynamic programming, greedy algorithms, graph algorithms, and NP-completeness.</p>
@@ -35,9 +56,42 @@
             </div>
         </div>
 
+        <div class="section">
+            <h2>All Coursework</h2>
+            <button class="dropdown-button" onclick="toggleDropdown()">Show All Coursework</button>
+            <div id="dropdown-content" class="dropdown-content">
+                <div class="item">
+                    <h3>Database Systems</h3>
+                    <p>Introduction to database design and implementation. Topics include relational databases, SQL, and data modeling.</p>
+                </div>
+                <div class="item">
+                    <h3>Computer Networks</h3>
+                    <p>Study of computer network architectures, protocols, and implementations. Topics include TCP/IP, routing, and network security.</p>
+                </div>
+                <div class="item">
+                    <h3>Operating Systems</h3>
+                    <p>Comprehensive overview of operating system concepts including process management, memory management, and file systems.</p>
+                </div>
+                <!-- Add more coursework items here -->
+            </div>
+        </div>
+
         <div class="footer">
-            <p>&copy; 2024 Jenna Plute. All rights reserved.</p>
+            <p>&copy; 2024 John Doe. All rights reserved.</p>
         </div>
     </div>
+
+    <script>
+        function toggleDropdown() {
+            var content = document.getElementById('dropdown-content');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                content.style.maxHeight = null;
+            } else {
+                content.style.display = 'block';
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        }
+    </script>
 </body>
 </html>
