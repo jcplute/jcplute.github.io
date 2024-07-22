@@ -113,23 +113,24 @@ nav a:hover {
 }
 
 .dropdown-button {
-    cursor: pointer;
-    background-color: #f8f8f8; /* Green */
-    color: Maroon;
-    padding: 15px 20px;
-    border: none;
-    text-align: left;
-    width: 100%;
-    font-size: 16px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
+            cursor: pointer;
+            background-color: #f8f8f8;
+            color: Maroon;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            width: 100%;
+            font-size: 16px;
+        }
 
 .dropdown-button:hover {
-    background-color: #45a049;
+    background-color: #ddd;
 }
+
+
+
+
+
 
 .flex-container {
     display: flex;
